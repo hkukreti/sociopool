@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "df0eaee2-3dc9-48a6-8d33-1bc417acc1de",
+		"name": "SocioPool",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add User Distance",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVkQXQiOjE1OTMxMDgzNTE0MDksImVtYWlsIjoidXNlckBnbWFpbC5jb20iLCJuYW1lIjoidXNlciB1c2VyIiwidWlkIjoiNWU4NmY2YzI5NTM0ZDAxNjk1NjgxYmFlIiwiZGVsZXRlZCI6MCwiaWF0IjoxNTkzMDgxMTM1fQ.wvVOTFSq72Tf2Y0lQiFOqL0HSG3VzkKmDR9mmTcGvn4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"distance\":\"15\",\n    \"startTime\":\"2020-07-25T05:43:03.957Z\",\n    \"timeRequired\":\"01:57:35\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/userTravel/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"userTravel",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user DIstance",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVkQXQiOjE1OTMxMDgzNTE0MDksImVtYWlsIjoidXNlckBnbWFpbC5jb20iLCJuYW1lIjoidXNlciB1c2VyIiwidWlkIjoiNWU4NmY2YzI5NTM0ZDAxNjk1NjgxYmFlIiwiZGVsZXRlZCI6MCwiaWF0IjoxNTkzMDgxMTM1fQ.wvVOTFSq72Tf2Y0lQiFOqL0HSG3VzkKmDR9mmTcGvn4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"startTime\" :  1595482983957,\n    \"endTime\" :  1595662838958\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/userTravel/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"userTravel",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
